@@ -1,0 +1,85 @@
+.align-top {
+  vertical-align: top;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.align-baseline {
+  vertical-align: baseline;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-light {
+  background-color: #f8f9fa;
+}
+
+.btn-dark {
+  background-color: #343a40;
+}
+
+.btn-link {
+  background-color: #007bff;
+}
+
+.btn-outline-primary {
+  background-color: #007bff;
+}
+
+.btn-outline-secondary {
+  background-color: #6c757d;
+}
+
+.btn-outline-success {
+  background-color: #28a745;
+}
+
+.btn-outline-info {
+  background-color: #17a2b8;
+}
+
+.btn-outline-warning {
+  background-color: #ffc107;
+}
+
+.btn-outline-danger {
+  background-color: #dc3545;
+}
+
+.btn-outline-light {
+  background-color: #f8f9fa;
+}
+
+.btn-outline-dark {
+  background-color: #343a40;
+}
+
+/*# sourceMappingURL=m.css.map */
