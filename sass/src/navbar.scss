@@ -1,6 +1,16 @@
 @import 'colors';
 
 .navbar {
+  &.navbar-dark.bg-dark {
+  }
+  &.navbar-light {
+  }
+  &.fixed-top {
+  }
+  &.fixed-bottom {
+  }
+  &.sticky-top {
+  }
   form {
   }
   .navbar-brand {
@@ -8,17 +18,7 @@
 
   .navbar-text {
   }
-  .navbar-dark bg-dark {
-  }
-  .navbar-light {
-  }
-  .navbar fixed-top {
-  }
-  .navbar fixed-bottom {
-  }
-  .navbar sticky-top {
-  }
-  .collapse navbar-collapse {
+  .collapse.navbar-collapse {
   }
   .navbar-toggler {
   }
