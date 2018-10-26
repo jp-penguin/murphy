@@ -1,54 +1,56 @@
 @import 'colors';
 
-.btn-primary {
-  background-color: $primary;
-}
+.btn {
+  .btn-primary {
+    background-color: $primary;
+  }
 
-.btn-secondary {
-  background-color: $secondary;
-}
-.btn-success {
-  background-color: $success;
-}
-.btn-info {
-  background-color: $info;
-}
-.btn-warning {
-  background-color: $warning;
-}
-.btn-danger {
-  background-color: $danger;
-}
-.btn-light {
-  background-color: $light;
-}
-.btn-dark {
-  background-color: $dark;
-}
-.btn-link {
-  background-color: $primary;
-}
-.btn-outline-primary {
-  background-color: $primary;
-}
-.btn-outline-secondary {
-  background-color: $secondary;
-}
-.btn-outline-success {
-  background-color: $success;
-}
-.btn-outline-info {
-  background-color: $info;
-}
-.btn-outline-warning {
-  background-color: $warning;
-}
-.btn-outline-danger {
-  background-color: $danger;
-}
-.btn-outline-light {
-  background-color: $light;
-}
-.btn-outline-dark {
-  background-color: $dark;
+  .btn-secondary {
+    background-color: $secondary;
+  }
+  .btn-success {
+    background-color: $success;
+  }
+  .btn-info {
+    background-color: $info;
+  }
+  .btn-warning {
+    background-color: $warning;
+  }
+  .btn-danger {
+    background-color: $danger;
+  }
+  .btn-light {
+    background-color: $light;
+  }
+  .btn-dark {
+    background-color: $dark;
+  }
+  .btn-link {
+    background-color: $primary;
+  }
+  .btn-outline-primary {
+    background-color: $primary;
+  }
+  .btn-outline-secondary {
+    background-color: $secondary;
+  }
+  .btn-outline-success {
+    background-color: $success;
+  }
+  .btn-outline-info {
+    background-color: $info;
+  }
+  .btn-outline-warning {
+    background-color: $warning;
+  }
+  .btn-outline-danger {
+    background-color: $danger;
+  }
+  .btn-outline-light {
+    background-color: $light;
+  }
+  .btn-outline-dark {
+    background-color: $dark;
+  }
 }
