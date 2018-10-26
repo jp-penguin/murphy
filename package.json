@@ -8,9 +8,11 @@
   "scripts": {
     "build": "node-sass sass/src/murphy.scss -o dist/css",
     "prod": "node-sass  --output-style compressed sass/src/murphy.scss -o prod/css --source-map true",
-    "pod": "node-sass  --output-style compressed sass/src/murphy.scss -o ../jppenguin-podcasts/src/assets"
+    "pod": "node-sass  --output-style compressed sass/src/murphy.scss -o ../jppenguin-podcasts/src/assets",
+    "watch": "node-sass  --watch  --output-style compressed sass/src/murphy.scss -o ../jppenguin-podcasts/src/assets"
   },
   "dependencies": {
+    "bourbon": "^5.1.0",
     "node-sass": "^4.9.4",
     "normalize.css": "^8.0.0",
     "tslint": "^5.11.0",

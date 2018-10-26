@@ -19,3 +19,36 @@ $warning: #ffc107;
 $danger: #dc3545;
 $light: #f8f9fa;
 $dark: #343a40;
+
+@mixin media-breakpoint-only($size) {
+  @if $size == xs {
+    @media (min-width: 0px) and (max-width: 579.98) {
+      // Extra small viewport
+      @content;
+    }
+  }
+  @if $size == sm {
+    @media (min-width: 0px) and (max-width: 579.98) {
+      // Small viewport
+      @content;
+    }
+  }
+  @if $size == md {
+    @media (min-width: 0px) and (max-width: 579.98) {
+      // Medium viewport
+      @content;
+    }
+  }
+  @if $size == lg {
+    @media (min-width: 0px) and (max-width: 579.98) {
+      // Large viewport
+      @content;
+    }
+  }
+  @if $size == xl {
+    @media (min-width: 0px) and (max-width: 579.98) {
+      // Extra large viewport
+      @content;
+    }
+  }
+}
