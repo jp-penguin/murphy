@@ -10,6 +10,21 @@
     background-color: shade($color, 10%) !important;
   }
 }
+@mixin buttonOutline($color) {
+  background-color: inherit;
+  border-color: $color;
+  border-style: solid;
+  border-width: 1px;
+  svg {
+    height: 48px;
+  }
+  &:hover {
+    background-color: $color !important;
+  }
+  &:disabled {
+    background-color: $color !important;
+  }
+}
 
 button.btn {
   height: 35px;
@@ -21,6 +36,37 @@ button.btn {
   border-style: none;
   font-family: inherit;
   display: inline-block;
+  font-size: 0.9375rem;
+
+  svg,
+  img {
+    fill: $white;
+    width: 33px;
+    height: 33px;
+    // margin: 5px;
+  }
+  &.btn-sm {
+    font-size: 0.8203125rem;
+    height: 28px !important;
+    svg,
+    img {
+      fill: $white;
+      width: 26px;
+      height: 26px;
+      // margin: 5px;
+    }
+  }
+  &.btn-lg {
+    font-size: 1.171875rem;
+    height: 45px !important;
+    svg,
+    img {
+      fill: $white;
+      width: 43px;
+      height: 43px;
+      // margin: 5px;
+    }
+  }
   &.btn-primary {
     @include buttonMix(($primary));
   }
@@ -50,28 +96,28 @@ button.btn {
     @include buttonMix(($primary));
   }
   &.btn-outline-primary {
-    @include buttonMix(($primary));
+    @include buttonOutline(($primary));
   }
   &.btn-outline-secondary {
-    @include buttonMix(($secondary));
+    @include buttonOutline(($secondary));
   }
   &.btn-outline-success {
-    @include buttonMix(($success));
+    @include buttonOutline(($success));
   }
 
   &.btn-outline-info {
-    @include buttonMix(($info));
+    @include buttonOutline(($info));
   }
   &.btn-outline-warning {
-    @include buttonMix(($warning));
+    @include buttonOutline(($warning));
   }
   &.btn-outline-danger {
-    @include buttonMix(($danger));
+    @include buttonOutline(($danger));
   }
   &.btn-outline-light {
-    @include buttonMix(($light));
+    @include buttonOutline(($light));
   }
   &.btn-outline-dark {
-    @include buttonMix(($dark));
+    @include buttonOutline(($dark));
   }
 }
