@@ -9,6 +9,10 @@
   &:disabled {
     background-color: shade($color, 10%) !important;
   }
+
+  &.active {
+    background-color: lighten($color, 10) !important;
+  }
 }
 @mixin tableOutline($color) {
   background-color: inherit;
@@ -25,7 +29,7 @@
 
 table {
   //   height: 35px;
-  padding-left: 5px;
+  // padding-left: 5px;
   //   font-weight: 400;
   //   color: inherit;
   //   margin-left: 1px;
@@ -33,9 +37,26 @@ table {
   //   border-style: none;
   //   font-family: inherit;
   //   display: inline-block;
-  //   font-size: 0.9375rem;
+  font-size: 0.88rem;
+  border-collapse: collapse;
+  tbody > :nth-child(odd) {
+    @include tableMix($primary);
+  }
+  tbody > :nth-child(even) {
+    @include tableMix($secondary);
+  }
+  width: 100%;
+  th {
+    padding: 10px;
+  }
+  td,
+  th {
+    text-overflow: clip;
+    text-align: left;
+  }
   tr {
-    height: 48px;
+    height: auto;
+    min-height: 60px;
   }
   &.table-sm {
     font-size: 0.8203125rem;

@@ -11,6 +11,11 @@ $font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto'
   'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
   'Segoe UI Symbol' !default;
 
+@mixin scroll($x: hidden, $y: hidden) {
+  overflow-x: $x;
+  overflow-y: $y;
+}
+
 body {
   font-family: $font-family-sans-serif;
   overflow: hidden;
@@ -22,6 +27,13 @@ body {
 .grid {
   display: grid;
   //   height: 100vh;
+}
+
+.scroll-y {
+  @include scroll(hidden, scroll);
+}
+.scroll-x {
+  @include scroll(scroll, hidden);
 }
 
 .white-space {
