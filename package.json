@@ -9,7 +9,7 @@
     "build": "node-sass sass/src/murphy.scss -o dist/css",
     "prod": "node-sass  --output-style compressed sass/src/murphy.scss -o prod/css --source-map true",
     "pod": "node-sass  --output-style compressed sass/src/murphy.scss -o ../jppenguin-podcasts/src/assets",
-    "watch": "node-sass  --watch  --output-style compressed sass/src/murphy.scss -o ../jppenguin-podcasts/src/assets"
+    "watch": "node-sass  --watch  sass/src/murphy.scss -o ../jppenguin-podcasts/src/assets"
   },
   "dependencies": {
     "bourbon": "^5.1.0",
