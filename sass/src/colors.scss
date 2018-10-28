@@ -181,7 +181,7 @@ $close-text-shadow: none !default;
 
 $pre-color: inherit !default;
 
-@mixin media-breakpoint-only($size) {
+@mixin media-breakpoint-only2($size) {
   @if $size == xs {
     @media (min-width: 0px) and (max-width: 579.98) {
       // Extra small viewport

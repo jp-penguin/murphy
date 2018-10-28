@@ -1,0 +1,5 @@
+@import 'colors';
+@import '../../node_modules/bourbon/core/bourbon';
+@import '../../node_modules/whiskers/src/whiskers.scss';
+
+@include modal('.modal', auto, auto, $primary, $white, $secondary, $white);
